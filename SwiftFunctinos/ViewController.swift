@@ -95,6 +95,11 @@ class ViewController: UIViewController {
         self.view.endEditing(true)
     }
     
+    @IBAction func InputFieldDidEndOnExit(sender: AnyObject) {
+        OutputLabel.text = InputField.text
+        self.resignFirstResponder() // Is this better than self.view.endEditing(true)?
+    }
+    
     @IBOutlet weak var InputField: UITextField!
     @IBOutlet weak var OutputLabel: UILabel!
 

@@ -24,12 +24,15 @@
                                     <constraint firstAttribute="width" secondItem="n94-gf-rgo" secondAttribute="height" multiplier="284:15" id="6TS-3f-Xiv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="6TS-3f-Xiv"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="InputFieldDidEndOnExit:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="NoQ-KX-22M"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SdP-ZG-zEj">
                                 <rect key="frame" x="16" y="96" width="568" height="30"/>
@@ -146,7 +149,7 @@
                                     <constraint firstAttribute="height" constant="226" id="qqu-KK-SnI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
